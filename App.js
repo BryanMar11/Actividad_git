@@ -1,4 +1,5 @@
 let pila = [];
+<<<<<<< HEAD
 let cola = [];
 
 // ===== PILA =====
@@ -6,6 +7,11 @@ function push() {
   const valor = document.getElementById("valorPila").value;
   if (valor === "") return;
 
+=======
+
+function push() {
+  const valor = document.getElementById("valor").value;
+>>>>>>> pila
   pila.push(valor);
   mostrarPila();
 }
@@ -24,6 +30,7 @@ function mostrarPila() {
     li.textContent = pila[i];
     lista.appendChild(li);
   }
+<<<<<<< HEAD
 }
 
 // ===== COLA =====
@@ -49,4 +56,6 @@ function mostrarCola() {
     li.textContent = cola[i];
     lista.appendChild(li);
   }
+=======
+>>>>>>> pila
 }
