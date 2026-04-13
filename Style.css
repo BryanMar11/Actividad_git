@@ -1,0 +1,24 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+h1 {
+  color: #333;
+}
+
+div {
+  margin: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
