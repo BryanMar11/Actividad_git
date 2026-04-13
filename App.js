@@ -1,9 +1,11 @@
 let pila = [];
 let cola = [];
 
-// -------- PILA --------
+// ===== PILA =====
 function push() {
-  const valor = document.getElementById("valor").value;
+  const valor = document.getElementById("valorPila").value;
+  if (valor === "") return;
+
   pila.push(valor);
   mostrarPila();
 }
@@ -15,9 +17,8 @@ function pop() {
 
 function mostrarPila() {
   const lista = document.getElementById("listaPila");
-  if (!lista) return;
-
   lista.innerHTML = "";
+
   for (let i = pila.length - 1; i >= 0; i--) {
     let li = document.createElement("li");
     li.textContent = pila[i];
@@ -25,9 +26,11 @@ function mostrarPila() {
   }
 }
 
-// -------- COLA --------
+// ===== COLA =====
 function enqueue() {
-  const valor = document.getElementById("valor").value;
+  const valor = document.getElementById("valorCola").value;
+  if (valor === "") return;
+
   cola.push(valor);
   mostrarCola();
 }
@@ -39,9 +42,8 @@ function dequeue() {
 
 function mostrarCola() {
   const lista = document.getElementById("listaCola");
-  if (!lista) return;
-
   lista.innerHTML = "";
+
   for (let i = 0; i < cola.length; i++) {
     let li = document.createElement("li");
     li.textContent = cola[i];
